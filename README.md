@@ -5,8 +5,13 @@ Code for Vertex AI Garage
 
 import tensorflow_hub as hub
 
-module_url = "https://tfhub.dev/google/universal-sentence-encoder/4" #@param ["https://tfhub.dev/google/universal-sentence-encoder/4", "https://tfhub.dev/google/universal-sentence-encoder-large/5"]
+
+module_url = "https://tfhub.dev/google/universal-sentence-encoder/4" 
+#@param ["https://tfhub.dev/google/universal-sentence-encoder/4", "https://tfhub.dev/google/universal-sentence-encoder-large/5"]
+
+
 embed = hub.load(module_url)
+
 print("module %s loaded" % module_url)
 
 
